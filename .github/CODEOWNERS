@@ -1,0 +1,20 @@
+# .github/CODEOWNERS
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# they will be requested for review when someone opens a pull request.
+*       @ohsemdomain
+
+# Frontend specific files
+/src/components/   @ohsemdomain
+/src/pages/        @ohsemdomain
+
+# State management
+/src/store/        @ohsemdomain
+
+# Configuration files
+*.config.js        @ohsemdomain
+*.config.ts        @ohsemdomain
+
+# Documentation
+*.md              @ohsemdomain
