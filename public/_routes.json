@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "include": ["/*"],
+    "exclude": [
+      "/assets/*",
+      "/_headers",
+      "/_routes.json",
+      "/favicon.ico"
+    ],
+    "rules": [
+      {
+        "type": "rewrite",
+        "match": "/api/*",
+        "destination": "/api/$1"
+      },
+      {
+        "type": "rewrite",
+        "match": "/*",
+        "destination": "/index.html"
+      }
+    ]
+  }

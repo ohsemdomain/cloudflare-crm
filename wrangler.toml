@@ -1,0 +1,25 @@
+# wrangler.toml
+name = "cloudflare-crm"
+type = "webpack"
+account_id = "" # You'll fill this in from your Cloudflare dashboard
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
+
+[build]
+command = "npm run build"
+output_dir = "dist"
+publish_dir = "dist"
+
+[build.upload]
+format = "service-worker"
+
+[env.production]
+name = "cloudflare-crm-prod"
+
+[env.staging]
+name = "cloudflare-crm-staging"
